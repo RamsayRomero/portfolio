@@ -1,12 +1,11 @@
 import Header from '../components/header';
 import Image from 'next/image';
-import Head from 'next/head';
+import Head from '../components/head';
 
 export default function Home() {
   return (
     <div className='bg-white'>
-      <Head>
-        <title>Ramsay Romero</title>
+      <Head title='Ramsay Romero'>
         <link rel='shortcut icon' href='/logo-black.png' />
       </Head>
       <div className='relative overflow-hidden'>
@@ -45,6 +44,7 @@ export default function Home() {
               <div className='hidden md:block md:col-span-1'>
                 <div className='aspect-w-5 aspect-h-8'>
                   <Image
+                    quality='70'
                     className='rounded-xl w-full object-cover'
                     layout='fill'
                     src='/images/IMG_0316.jpg'
@@ -185,8 +185,9 @@ export default function Home() {
                       This is an app that uses data from the Weatherbit API to
                       provide weather information for my favorite rock climbing
                       areas. It taught me how to fetch data and update state
-                      with the useEffect hook and to create a responsive layout
-                      where each column has independent scroll behavior
+                      with the useEffect hook, persist user settings with local
+                      storage, and to create a responsive layout where each
+                      column has independent scroll behavior.
                     </p>
                   </div>
                   <div className='mt-2'>
@@ -214,6 +215,8 @@ export default function Home() {
                 <div className='w-full md:w-3/4'>
                   <div className='rounded-md overflow-hidden aspect-w-11 aspect-h-5'>
                     <Image
+                      loading='eager'
+                      quality='40'
                       src='/images/screenshot-jovial-goldberg-ee1b37.netlify.app-2021.04.01-14_18_26.png'
                       alt='Climbing Weather'
                       layout='fill'
@@ -225,6 +228,8 @@ export default function Home() {
               <div className='flex flex-col mt-20 md:flex-row md:space-x-6 md:mt-12'>
                 <div className='w-full md:w-auto'>
                   <Image
+                    loading='eager'
+                    quality='40'
                     src='/images/screenshot-mystifying-mcclintock-45a916.netlify.app-2021.03.24-17_34_47.png'
                     alt='Windbnb'
                     width={640}
