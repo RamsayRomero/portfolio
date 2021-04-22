@@ -11,15 +11,13 @@ export default function Home() {
       <div className='relative overflow-hidden'>
         <Header />
         <main>
-          <div className='pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14'>
+          <div className='pt-10 bg-gray-900 sm:pt-16 lg:pt-8 md:pb-14'>
             <div className='mx-auto max-w-7xl px-8 md:px-16 lg:px-60'>
-              <div className='lg:py-16'>
-                <span className='bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block'>
-                  Hi, my name is
-                </span>
+              <div className='lg:py-14'>
+                <span className='text-cyan-500 block'>Hi, my name is</span>
                 <h1 className='mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl'>
                   <span className='block'>Ramsay Romero.</span>
-                  <span className='mt-2 bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block'>
+                  <span className='mt-2 bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-red-600 block'>
                     I'm a front end developer.
                   </span>
                 </h1>
@@ -30,7 +28,7 @@ export default function Home() {
                 <div className='mt-10 sm:mt-12'>
                   <a
                     href='mailto:Ramsay.Romero@gmail.com'
-                    className='py-3 px-5 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900'
+                    className='py-3 px-5 rounded-md shadow bg-gradient-to-r from-amber-500 to-red-600 text-white font-medium hover:from-amber-600 hover:to-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 focus:ring-offset-gray-900'
                   >
                     Get in touch
                   </a>
@@ -39,7 +37,7 @@ export default function Home() {
             </div>
           </div>
 
-          <section id='about' className='py-20 bg-gray-900'>
+          <section id='about' className='py-16 bg-gray-900'>
             <div className='px-8 md:px-16 md:grid md:grid-cols-3 md:gap-8 lg:mx-auto lg:max-w-5xl'>
               <div className='hidden md:block md:col-span-1'>
                 <div className='aspect-w-5 aspect-h-8'>
@@ -47,7 +45,7 @@ export default function Home() {
                     quality='70'
                     className='rounded-xl w-full object-cover'
                     layout='fill'
-                    src='/images/IMG_0316.jpg'
+                    src='/images/IMG_0681.JPG'
                     alt=''
                   />
                 </div>
@@ -199,13 +197,13 @@ export default function Home() {
                   </div>
                   <div className='mt-5 flex space-x-4'>
                     <a
-                      className='inline-block border border-white rounded-lg py-2 px-3'
+                      className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
                       href='https://github.com/RamsayRomero/condies'
                     >
-                      Github Repo
+                      GitHub Repo
                     </a>
                     <a
-                      className='inline-block border border-white rounded-lg py-2 px-3'
+                      className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
                       href='https://jovial-goldberg-ee1b37.netlify.app/'
                     >
                       Live demo
@@ -261,13 +259,13 @@ export default function Home() {
                   </div>
                   <div className='mt-5 flex space-x-4 justify-end'>
                     <a
-                      className='inline-block border border-white rounded-lg py-2 px-3'
+                      className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
                       href='https://github.com/RamsayRomero/windbnb'
                     >
-                      Github Repo
+                      GitHub Repo
                     </a>
                     <a
-                      className='inline-block border border-white rounded-lg py-2 px-3'
+                      className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
                       href='https://mystifying-mcclintock-45a916.netlify.app/'
                     >
                       Live demo
@@ -292,7 +290,7 @@ export default function Home() {
                 <div className='inline-flex rounded-md shadow'>
                   <a
                     href='mailto:Ramsay.Romero@gmail.com'
-                    className='py-3 px-5 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900'
+                    className='py-3 px-5 rounded-md shadow bg-gradient-to-r from-amber-500 to-red-600 text-white font-medium hover:from-amber-600 hover:to-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 focus:ring-offset-gray-900'
                   >
                     Say Hello
                   </a>
@@ -302,7 +300,7 @@ export default function Home() {
           </section>
         </main>
         <footer className='bg-gray-900 py-8'>
-          <div className='px-8 text-center text-xs text-white'>
+          <div className='px-8 text-center text-xs text-cyan-500'>
             Created by Ramsay Romero 2021 with Next.js
           </div>
         </footer>
