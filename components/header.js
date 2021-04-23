@@ -135,7 +135,7 @@ export default function Header() {
               <a
                 href='/Ramsay_Romero_Resume_22-04-2021-13-40-20.pdf'
                 target='_blank'
-                className='block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-amber-500 to-red-600 text-white font-medium hover:from-amber-600 hover:to-red-700'
+                className='block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-amber-400 to-red-500 text-white font-medium hover:from-amber-500 hover:to-red-600'
               >
                 Resume
               </a>

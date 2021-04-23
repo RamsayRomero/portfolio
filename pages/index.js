@@ -17,7 +17,7 @@ export default function Home() {
                 <span className='text-cyan-500 block'>Hi, my name is</span>
                 <h1 className='mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl'>
                   <span className='block'>Ramsay Romero.</span>
-                  <span className='mt-2 bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-red-600 block'>
+                  <span className='mt-2 bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-red-500 block'>
                     I'm a front end developer.
                   </span>
                 </h1>
@@ -28,7 +28,7 @@ export default function Home() {
                 <div className='mt-10 sm:mt-12'>
                   <a
                     href='mailto:Ramsay.Romero@gmail.com'
-                    className='py-3 px-5 rounded-md shadow bg-gradient-to-r from-amber-500 to-red-600 text-white font-medium hover:from-amber-600 hover:to-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 focus:ring-offset-gray-900'
+                    className='py-3 px-5 rounded-md shadow bg-gradient-to-r from-amber-400 to-red-500 text-white font-medium hover:from-amber-500 hover:to-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 focus:ring-offset-gray-900'
                   >
                     Get in touch
                   </a>
