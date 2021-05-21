@@ -1,13 +1,10 @@
 import Header from '../components/header';
 import Image from 'next/image';
 import Head from '../components/head';
-import { useRouter } from 'next/router';
 import { Fade } from 'react-awesome-reveal';
-import { getAbsoluteURL } from '../utils';
 
 export default function Home() {
-  const path = `/images/IMG_0681.JPG`;
-  const fullImageURL = getAbsoluteURL(path);
+  const fullImageURL = `https://ramsayromero/images/IMG_0681.JPG`;
 
   return (
     <div className='bg-white'>
