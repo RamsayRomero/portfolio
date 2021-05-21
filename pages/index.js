@@ -1,15 +1,20 @@
 import Header from '../components/header';
 import Image from 'next/image';
-import Head from '../components/head';
+import Head from 'next/head';
 import { Fade } from 'react-awesome-reveal';
 
-export default function Home() {
-  const fullImageURL = `https://ramsayromero.com/images/IMG_0681.JPG`;
+const fullImageURL = `https://ramsayromero.com/images/IMG_0681.JPG`;
 
+export default function Home() {
   return (
     <div className='bg-white'>
-      <Head title='Ramsay Romero'>
+      <Head>
+        <title>Ramsay Romero</title>
         <link rel='shortcut icon' href='/logo-black.png' />
+        <meta
+          name='description'
+          content='Ramsay Romero is a front end web developer based in Los Angeles, CA specializing in React'
+        />
         <meta property='og:image' content={fullImageURL} />
         <meta name='twitter:image' content={fullImageURL} />
       </Head>
