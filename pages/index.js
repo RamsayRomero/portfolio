@@ -6,11 +6,8 @@ import { Fade } from 'react-awesome-reveal';
 import { getAbsoluteURL } from '../utils';
 
 export default function Home() {
-  const router = useRouter();
-  const searchParams = new URLSearchParams();
-  searchParams.set('path', router.pathname);
-  const image = `/api/thumbnail?${searchParams}`;
-  const fullImageURL = getAbsoluteURL(image);
+  const path = `/api/thumbnail`;
+  const fullImageURL = getAbsoluteURL(path);
 
   return (
     <div className='bg-white'>

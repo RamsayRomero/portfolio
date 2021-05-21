@@ -1,6 +1,6 @@
 import playwright from 'playwright-core';
 import chromium from 'chrome-aws-lambda';
-import { getAbsoluteURL } from 'utils/utils';
+import { getAbsoluteURL } from '../../utils';
 
 export default async ({ req, res }) => {
   try {
@@ -21,7 +21,7 @@ export default async ({ req, res }) => {
         height: 630,
       },
     });
-    const url = getAbsoluteURL(req.query['path']);
+    const url = getAbsoluteURL('');
     await page.goto(url, {
       timeout: 15 * 1000,
     });
