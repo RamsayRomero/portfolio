@@ -6,7 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 import { getAbsoluteURL } from '../utils';
 
 export default function Home() {
-  const path = `/api/thumbnail`;
+  const path = `/images/IMG_0681.JPG`;
   const fullImageURL = getAbsoluteURL(path);
 
   return (
