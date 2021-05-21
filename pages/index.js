@@ -1,14 +1,23 @@
 import Header from '../components/header';
 import Image from 'next/image';
 import Head from '../components/head';
+import { useRouter } from 'next/router';
 import { Fade } from 'react-awesome-reveal';
+import { getAbsoluteURL } from '../utils';
 
 export default function Home() {
+  const router = useRouter();
+  const searchParams = new URLSearchParams();
+  searchParams.set('path', router.pathname);
+  const image = `/api/thumbnail?${searchParams}`;
+  const fullImageURL = getAbsoluteURL(image);
+
   return (
     <div className='bg-white'>
       <Head title='Ramsay Romero'>
         <link rel='shortcut icon' href='/logo-black.png' />
-        <meta property='og:image' content='/images/IMG_0681.JPG' />
+        <meta property='og:image' content={fullImageURL} />
+        <meta name='twitter:image' content={fullImageURL} />
       </Head>
       <div className='relative overflow-hidden'>
         <Header />
