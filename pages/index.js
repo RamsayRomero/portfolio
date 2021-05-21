@@ -8,6 +8,7 @@ export default function Home() {
     <div className='bg-white'>
       <Head title='Ramsay Romero'>
         <link rel='shortcut icon' href='/logo-black.png' />
+        <meta property='og:image' content='/images/IMG_0681.JPG' />
       </Head>
       <div className='relative overflow-hidden'>
         <Header />
