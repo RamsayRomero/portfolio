@@ -4,7 +4,7 @@ import Head from '../components/head';
 import { Fade } from 'react-awesome-reveal';
 
 export default function Home() {
-  const fullImageURL = `https://ramsayromero/images/IMG_0681.JPG`;
+  const fullImageURL = `https://ramsayromero.com/images/IMG_0681.JPG`;
 
   return (
     <div className='bg-white'>
