@@ -29,13 +29,13 @@ export default function Home() {
                   <h1 className='mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl'>
                     <span className='block'>Ramsay Romero.</span>
                     <span className='mt-2 bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-red-500 block'>
-                      I'm a front end developer.
+                      I build react apps.
                     </span>
                   </h1>
                   <p className='mt-3 md:w-3/4 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl'>
                     I'm a front end developer based in Los Angeles, CA
-                    specializing in building elegant user interfaces using
-                    React.
+                    specializing in building elegant user interfaces using React
+                    and TypeScript.
                   </p>
                   <div className='mt-10 sm:mt-12'>
                     <a
@@ -79,8 +79,9 @@ export default function Home() {
                       applications with elegent and intuitive user experiences.
                     </p>
                     <p className='mt-3 text-lg'>
-                      I'm passionate about writing clean and reusible code and
-                      always strive to optimize performance on my applications.
+                      I have a drive for continuous learning and as a self
+                      taught developer, I'm highly self-motivated and
+                      self-sufficient.
                     </p>
                     <p className='mt-3 text-lg'>
                       Here are some of the technologies I love using:
@@ -145,7 +146,7 @@ export default function Home() {
                               clipRule='evenodd'
                             />
                           </svg>
-                          <span>Redux</span>
+                          <span>TypeScript</span>
                         </li>
                         <li>
                           <svg
@@ -177,6 +178,36 @@ export default function Home() {
                           </svg>
                           <span>Node.js</span>
                         </li>
+                        <li>
+                          <svg
+                            className='w-5 h-5 inline'
+                            xmlns='http://www.w3.org/2000/svg'
+                            viewBox='0 0 20 20'
+                            fill='currentColor'
+                          >
+                            <path
+                              fillRule='evenodd'
+                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                              clipRule='evenodd'
+                            />
+                          </svg>
+                          <span>Next.js</span>
+                        </li>
+                        <li>
+                          <svg
+                            className='w-5 h-5 inline'
+                            xmlns='http://www.w3.org/2000/svg'
+                            viewBox='0 0 20 20'
+                            fill='currentColor'
+                          >
+                            <path
+                              fillRule='evenodd'
+                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                              clipRule='evenodd'
+                            />
+                          </svg>
+                          <span>Redux</span>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -185,12 +216,66 @@ export default function Home() {
             </Fade>
           </section>
 
-          <section id='projects' className='bg-gray-900 lg:py-10'>
+          <section id='projects' className='bg-gray-900 lg:py-6'>
             <div className='mx-auto max-w-7xl px-8 md:px-16 lg:px-24'>
               <div className='py-8'>
-                <h2 className='text-white text-4xl'>Projects</h2>
+                <h2 className='text-white text-center text-5xl'>Projects</h2>
               </div>
-              <div className='flex flex-col flex-col-reverse md:flex-row md:space-x-6'>
+              <div className='flex flex-col mt-20 md:flex-row md:space-x-6 md:mt-12'>
+                <div className='w-full md:w-auto'>
+                  <Fade direction='left'>
+                    <Image
+                      loading='eager'
+                      quality='40'
+                      src='/images/screenshot-localhost_3000-2021.06.06-13_59_35.png'
+                      alt='Crimp Advisor'
+                      width={900}
+                      height={400}
+                      objectFit='cover'
+                      objectPosition='top'
+                      className='rounded-md'
+                    />
+                  </Fade>
+                </div>
+                <div className='w-full md:w-1/2 text-white md:text-right'>
+                  <h3 className='text-3xl mt-8 md:mt-0'>Crimp Advisor</h3>
+                  <Fade direction='right'>
+                    <div className='bg-gray-800 p-6 mt-4 rounded-md'>
+                      <p>
+                        A fullstack rock climbing journal application built with
+                        Next.js, TypeScript, Prisma, Postgres, React Query and
+                        TailwindCSS. Features authentication with NextAuth and
+                        Auth0, uses the Google Maps and Google Places api and
+                        uses Recharts for data visualization. Users can create
+                        and update information about rock climbs and climbing
+                        areas, and see climbing activity posted by other users.
+                      </p>
+                    </div>
+                  </Fade>
+                  <div className='mt-2'>
+                    <ul className='flex space-x-4 justify-end'>
+                      <li>Next.js</li>
+                      <li>TypeScript</li>
+                      <li>Postgresql</li>
+                    </ul>
+                  </div>
+                  <div className='mt-5 flex space-x-4 justify-end'>
+                    <a
+                      className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
+                      href='https://github.com/RamsayRomero/windbnb'
+                    >
+                      GitHub Repo
+                    </a>
+                    <a
+                      className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
+                      href='https://mystifying-mcclintock-45a916.netlify.app/'
+                    >
+                      Live demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className='mt-12 flex flex-col md:flex-row md:space-x-6'>
                 <div className='w-full md:w-1/2 text-white'>
                   <h3 className='text-3xl mt-8 md:mt-0'>Climbing Weather</h3>
                   <Fade direction='left'>
