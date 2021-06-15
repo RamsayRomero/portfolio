@@ -3,8 +3,6 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { Fade } from 'react-awesome-reveal';
 
-const fullImageURL = `https://ramsayromero.com/images/IMG_0681.JPG`;
-
 export default function Home() {
   return (
     <div className='bg-white'>
@@ -15,8 +13,16 @@ export default function Home() {
           name='description'
           content='Ramsay Romero is a front end web developer based in Los Angeles, CA specializing in React'
         />
-        <meta property='og:image' content={fullImageURL} />
-        <meta name='twitter:image' content={fullImageURL} />
+        <meta
+          property='og:image'
+          content='https://ramsayromero.com/images/IMG_0681.JPG'
+          key='ogimage'
+        />
+        <meta
+          property='twitter:image'
+          content='https://ramsayromero.com/images/IMG_0681.JPG'
+          key='ogimage'
+        />
       </Head>
       <div className='relative overflow-hidden'>
         <Header />
