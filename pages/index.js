@@ -27,10 +27,10 @@ export default function Home() {
       <div className='relative overflow-hidden'>
         <Header />
         <main>
-          <div className='pt-10 bg-gray-900 sm:pt-16 lg:pt-8 md:pb-14'>
+          <div className='py-10 bg-gray-900 sm:py-16'>
             <Fade>
-              <div className='mx-auto max-w-7xl px-8 md:px-16 lg:px-60'>
-                <div className='lg:py-14'>
+              <div className='mx-auto max-w-screen-lg px-8 md:px-16 lg:grid lg:grid-cols-3'>
+                <div className='col-span-2 lg:mt-12'>
                   <span className='text-cyan-500 block'>Hi, my name is</span>
                   <h1 className='mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl'>
                     <span className='block'>Ramsay Romero.</span>
@@ -45,189 +45,32 @@ export default function Home() {
                   </p>
                   <div className='mt-10 sm:mt-12'>
                     <a
-                      href='mailto:Ramsay.Romero@gmail.com'
+                      href='#projects'
                       className='py-3 px-5 rounded-md shadow bg-gradient-to-r from-amber-400 to-red-500 text-white font-medium hover:from-amber-500 hover:to-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 focus:ring-offset-gray-900'
                     >
-                      Get in touch
+                      View my work
                     </a>
                   </div>
+                </div>
+                <div className='aspect-w-5 aspect-h-8 col-span-1'>
+                  <Image
+                    quality='70'
+                    className='rounded-xl w-full object-cover'
+                    layout='fill'
+                    src='/images/IMG_0681.JPG'
+                    alt=''
+                  />
                 </div>
               </div>
             </Fade>
           </div>
 
-          <section id='about' className='py-16 bg-gray-900'>
-            <Fade>
-              <div className='px-8 md:px-16 md:grid md:grid-cols-3 md:gap-8 lg:mx-auto lg:max-w-5xl'>
-                <div className='hidden md:block md:col-span-1'>
-                  <div className='aspect-w-5 aspect-h-8'>
-                    <Image
-                      quality='70'
-                      className='rounded-xl w-full object-cover'
-                      layout='fill'
-                      src='/images/IMG_0681.JPG'
-                      alt=''
-                    />
-                  </div>
-                </div>
-
-                <div className='lg:m-0 md:col-span-2 lg:pl-8'>
-                  <div className='mx-auto max-w-md sm:max-w-2xl lg:max-w-none text-white'>
-                    <h2 className='text-base font-semibold uppercase tracking-wider'>
-                      About me
-                    </h2>
-                    <p className='mt-3 text-lg'>
-                      Hello! I'm Ramsay, a front end web developer based in Los
-                      Angeles, CA.
-                    </p>
-                    <p className='mt-3 text-lg'>
-                      I enjoy using React to create beautiful and responsive web
-                      applications with elegent and intuitive user experiences.
-                    </p>
-                    <p className='mt-3 text-lg'>
-                      I have a drive for continuous learning and as a self
-                      taught developer, I'm highly self-motivated and
-                      self-sufficient.
-                    </p>
-                    <p className='mt-3 text-lg'>
-                      Here are some of the technologies I love using:
-                    </p>
-                    <div className='sm:w-3/4'>
-                      <ul className='gap-4 grid grid-cols-2 mt-4'>
-                        <li>
-                          <svg
-                            className='w-5 h-5 inline'
-                            xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 20 20'
-                            fill='currentColor'
-                          >
-                            <path
-                              fillRule='evenodd'
-                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                              clipRule='evenodd'
-                            />
-                          </svg>
-                          <span>HTML + CSS</span>
-                        </li>
-                        <li>
-                          <svg
-                            className='w-5 h-5 inline'
-                            xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 20 20'
-                            fill='currentColor'
-                          >
-                            <path
-                              fillRule='evenodd'
-                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                              clipRule='evenodd'
-                            />
-                          </svg>
-                          <span>JavaScript</span>
-                        </li>
-                        <li>
-                          <svg
-                            className='w-5 h-5 inline'
-                            xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 20 20'
-                            fill='currentColor'
-                          >
-                            <path
-                              fillRule='evenodd'
-                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                              clipRule='evenodd'
-                            />
-                          </svg>
-                          <span>React</span>
-                        </li>
-                        <li>
-                          <svg
-                            className='w-5 h-5 inline'
-                            xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 20 20'
-                            fill='currentColor'
-                          >
-                            <path
-                              fillRule='evenodd'
-                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                              clipRule='evenodd'
-                            />
-                          </svg>
-                          <span>TypeScript</span>
-                        </li>
-                        <li>
-                          <svg
-                            className='w-5 h-5 inline'
-                            xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 20 20'
-                            fill='currentColor'
-                          >
-                            <path
-                              fillRule='evenodd'
-                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                              clipRule='evenodd'
-                            />
-                          </svg>
-                          <span>Tailwind</span>
-                        </li>
-                        <li>
-                          <svg
-                            className='w-5 h-5 inline'
-                            xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 20 20'
-                            fill='currentColor'
-                          >
-                            <path
-                              fillRule='evenodd'
-                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                              clipRule='evenodd'
-                            />
-                          </svg>
-                          <span>Node.js</span>
-                        </li>
-                        <li>
-                          <svg
-                            className='w-5 h-5 inline'
-                            xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 20 20'
-                            fill='currentColor'
-                          >
-                            <path
-                              fillRule='evenodd'
-                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                              clipRule='evenodd'
-                            />
-                          </svg>
-                          <span>Next.js</span>
-                        </li>
-                        <li>
-                          <svg
-                            className='w-5 h-5 inline'
-                            xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 20 20'
-                            fill='currentColor'
-                          >
-                            <path
-                              fillRule='evenodd'
-                              d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                              clipRule='evenodd'
-                            />
-                          </svg>
-                          <span>Redux</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Fade>
-          </section>
-
-          <section id='projects' className='bg-gray-900 lg:py-6'>
+          <section id='projects' className='bg-gray-900 py-16'>
             <div className='mx-auto max-w-7xl px-8 md:px-16 lg:px-24'>
               <div className='py-8'>
                 <h2 className='text-white text-center text-5xl'>Projects</h2>
               </div>
-              <div className='flex flex-col mt-20 md:flex-row md:space-x-6 md:mt-12'>
+              <div className='flex flex-col mt-8 md:flex-row md:space-x-6'>
                 <div className='w-full md:w-auto'>
                   <Fade direction='left'>
                     <Image
@@ -389,6 +232,162 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </section>
+
+          <section id='about' className='py-16 bg-gray-900'>
+            <Fade>
+              <h2 className='text-xl mb-6 text-white text-center font-semibold uppercase tracking-wider'>
+                About me
+              </h2>
+              <div className='px-8 md:px-16 lg:grid lg:grid-cols-2 mx-auto max-w-screen-lg gap-12'>
+                <div className=''>
+                  <div className='text-white'>
+                    <p className='mt-3 text-lg'>
+                      Hello! I'm Ramsay, a front end web developer based in Los
+                      Angeles, CA.
+                    </p>
+                    <p className='mt-3 text-lg'>
+                      I enjoy using React to create beautiful and responsive web
+                      applications with elegent and intuitive user experiences.
+                    </p>
+                    <p className='mt-3 text-lg'>
+                      I have a drive for continuous learning and as a self
+                      taught developer, I'm highly self-motivated and
+                      self-sufficient.
+                    </p>
+                  </div>
+                </div>
+                <div className='text-white'>
+                  <p className='mt-3 text-lg'>
+                    Here are some of the technologies I love using:
+                  </p>
+                  <div className='sm:w-3/4'>
+                    <ul className='gap-4 grid grid-cols-2 mt-4'>
+                      <li>
+                        <svg
+                          className='w-5 h-5 inline'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                        <span>HTML + CSS</span>
+                      </li>
+                      <li>
+                        <svg
+                          className='w-5 h-5 inline'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                        <span>JavaScript</span>
+                      </li>
+                      <li>
+                        <svg
+                          className='w-5 h-5 inline'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                        <span>React</span>
+                      </li>
+                      <li>
+                        <svg
+                          className='w-5 h-5 inline'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                        <span>TypeScript</span>
+                      </li>
+                      <li>
+                        <svg
+                          className='w-5 h-5 inline'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                        <span>Tailwind</span>
+                      </li>
+                      <li>
+                        <svg
+                          className='w-5 h-5 inline'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                        <span>Node.js</span>
+                      </li>
+                      <li>
+                        <svg
+                          className='w-5 h-5 inline'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                        <span>Next.js</span>
+                      </li>
+                      <li>
+                        <svg
+                          className='w-5 h-5 inline'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                        <span>Redux</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </Fade>
           </section>
 
           <section id='contact' className='bg-gray-900 py-16'>

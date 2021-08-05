@@ -62,9 +62,9 @@ export default function Header() {
           </div>
           <div className='hidden md:flex md:items-center md:space-x-6'>
             <a
-              href='/Ramsay_Romero_Resume_14-06-2021-17-11-05.pdf'
+              href='/Ramsay_Romero_Resume.pdf'
               target='_blank'
-              className='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700'
+              className='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-cyan-600 hover:bg-cyan-700'
             >
               Resume
             </a>
@@ -133,7 +133,7 @@ export default function Header() {
             </div>
             <div className='mt-6 px-5'>
               <a
-                href='/Ramsay_Romero_Resume_14-06-2021-17-11-05.pdf'
+                href='/Ramsay_Romero_Resume.pdf'
                 target='_blank'
                 className='block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-amber-400 to-red-500 text-white font-medium hover:from-amber-500 hover:to-red-600'
               >
