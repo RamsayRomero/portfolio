@@ -111,15 +111,15 @@ export default function Home() {
                   <div className='mt-5 flex space-x-4 justify-end'>
                     <a
                       className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
-                      href='https://github.com/RamsayRomero/windbnb'
+                      href='https://github.com/RamsayRomero/crimp-advisor'
                     >
                       GitHub Repo
                     </a>
                     <a
                       className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
-                      href='https://mystifying-mcclintock-45a916.netlify.app/'
+                      href='https://crimpadvisor.com'
                     >
-                      Live demo
+                      Live site
                     </a>
                   </div>
                 </div>
@@ -158,7 +158,7 @@ export default function Home() {
                       className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
                       href='https://jovial-goldberg-ee1b37.netlify.app/'
                     >
-                      Live demo
+                      Live site
                     </a>
                   </div>
                 </div>
@@ -226,7 +226,7 @@ export default function Home() {
                       className='inline-block border border-white rounded-lg py-2 px-3 hover:bg-gray-800'
                       href='https://mystifying-mcclintock-45a916.netlify.app/'
                     >
-                      Live demo
+                      Live site
                     </a>
                   </div>
                 </div>
