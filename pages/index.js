@@ -27,7 +27,7 @@ export default function Home() {
       <div className='relative overflow-hidden'>
         <Header />
         <main>
-          <div className='py-10 bg-gray-900 sm:py-16'>
+          <div className='py-8 bg-gray-900 sm:py-16'>
             <Fade>
               <div className='mx-auto max-w-screen-lg px-8 md:px-16 lg:grid lg:grid-cols-3'>
                 <div className='col-span-2 lg:mt-12'>
@@ -52,7 +52,7 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-                <div className='aspect-w-5 aspect-h-8 col-span-1'>
+                <div className='hidden lg:block aspect-w-5 aspect-h-8 col-span-1'>
                   <Image
                     quality='70'
                     className='rounded-xl w-full object-cover'
