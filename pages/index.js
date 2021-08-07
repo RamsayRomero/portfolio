@@ -52,7 +52,7 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-                <div className='hidden lg:block aspect-w-5 aspect-h-8 col-span-1'>
+                <div className='hidden lg:grid aspect-w-5 aspect-h-8 col-span-1'>
                   <Image
                     quality='70'
                     priority='true'
