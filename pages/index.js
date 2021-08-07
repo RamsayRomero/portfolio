@@ -55,6 +55,7 @@ export default function Home() {
                 <div className='hidden lg:block aspect-w-5 aspect-h-8 col-span-1'>
                   <Image
                     quality='70'
+                    priority='true'
                     className='rounded-xl w-full object-cover'
                     layout='fill'
                     src='/images/IMG_0681.JPG'
