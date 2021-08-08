@@ -88,7 +88,7 @@ export default function Home() {
                   </Fade>
                 </div>
                 <div className='w-full md:w-1/2 text-white md:text-right'>
-                  <h3 className='text-3xl mt-8 md:mt-0'>Crimp Advisor</h3>
+                  <h3 className='text-3xl mt-4 md:mt-0'>Crimp Advisor</h3>
                   <Fade direction='right'>
                     <div className='bg-gray-800 p-6 mt-4 rounded-md'>
                       <p>
@@ -127,7 +127,7 @@ export default function Home() {
               </div>
               <div className='mt-12 flex flex-col md:flex-row md:space-x-6'>
                 <div className='w-full md:w-1/2 text-white'>
-                  <h3 className='text-3xl mt-8 md:mt-0'>Climbing Weather</h3>
+                  <h3 className='text-3xl mt-4 md:mt-0'>Climbing Weather</h3>
                   <Fade direction='left'>
                     <div className='bg-gray-800 p-6 mt-4 rounded-md'>
                       <p>
@@ -163,7 +163,7 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-                <div className='w-full md:w-3/4'>
+                <div className='w-full md:w-3/4 order-first md:order-none'>
                   <div className='rounded-md overflow-hidden aspect-w-11 aspect-h-5'>
                     <Fade direction='right'>
                       <Image
@@ -195,7 +195,7 @@ export default function Home() {
                   </Fade>
                 </div>
                 <div className='w-full md:w-1/2 text-white md:text-right'>
-                  <h3 className='text-3xl mt-8 md:mt-0'>Windbnb</h3>
+                  <h3 className='text-3xl mt-4 md:mt-0'>Windbnb</h3>
                   <Fade direction='right'>
                     <div className='bg-gray-800 p-6 mt-4 rounded-md'>
                       <p>
